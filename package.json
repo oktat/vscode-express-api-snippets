@@ -1,6 +1,6 @@
 {
-  "name": "exapi_snippets",
-  "version": "0.0.1",
+  "name": "exapi-snippets",
+  "version": "0.0.2",
   "description": "exapi snippets",  
   "displayName": "Exapi Snippets",
   "publisher": "andteki",
@@ -13,6 +13,9 @@
   "categories": [
     "Snippets"
   ],
+  "engines": {
+    "vscode": "^1.22.0"
+  },
   "contributes": {
     "snippets": [
       {
@@ -20,5 +23,8 @@
         "path": "snippets/snippets.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "vsce package"
   }
 }

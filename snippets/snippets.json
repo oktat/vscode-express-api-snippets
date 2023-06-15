@@ -2,20 +2,55 @@
     "databaseSablon": {
         "prefix": "db",
         "body": [
-            "Valami",
-            "Más valami",
+            "const Sequalize = require('sequelize')",
+            "const config = require('../../config/default.json')",
             "",
-            "Harmadik"
+            "if(config.app.log != false) {",
+            "    var log = console.log",
+            "}",
+            "",
+            "console.log(typeof console.log)",
+            "const sequalize = new Sequalize(",
+            "    config.db.name,",
+            "    config.db.user, ",
+            "    config.db.pass,",
+            "    {",
+            "        logging: log,",
+            "        dialect: config.db.dialect,",
+            "        storage: config.db.path,",
+            "        host: config.db.host,",
+            "        dialectOptions: {}",
+            "    }",
+            ")",
+            "",
+            "module.exports = sequalize",
+            ""
         ],
         "description": "Adatbázis beszúrás"
     },
     "modelSablon": {
         "prefix": "mod",
         "body": [
-            "Model lesz",
-            "Per",
+            "const { DataTypes } = require('sequelize')",
+            "const sequelize = require('../database/database')",
             "",
-            "Harmadik"
+            "const User = sequelize.define('User', {",
+            "    id: { ",
+            "        type: DataTypes.INTEGER,",
+            "        autoIncrement: true,",
+            "        primaryKey: true",
+            "    },",
+            "    name: { type: DataTypes.STRING,  allowNull: false  },",
+            "    email: { type: DataTypes.STRING,  allowNull: true  },",
+            "    password: { type: DataTypes.STRING , allowNull: false }",
+            "})",
+            "",
+            "sequelize.sync({",
+            "    force: false",
+            "})",
+            "",
+            "module.exports = User",
+            ""
         ],
         "description": "Model beszúrás"        
     }
