@@ -1,0 +1,22 @@
+{
+    "databaseSablon": {
+        "prefix": "db",
+        "body": [
+            "Valami",
+            "Más valami",
+            "",
+            "Harmadik"
+        ],
+        "description": "Adatbázis beszúrás"
+    },
+    "modelSablon": {
+        "prefix": "mod",
+        "body": [
+            "Model lesz",
+            "Per",
+            "",
+            "Harmadik"
+        ],
+        "description": "Model beszúrás"        
+    }
+}
