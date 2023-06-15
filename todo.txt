@@ -1,0 +1,7 @@
+TODO: delete db
+TODO: create controll
+TODO: create index method
+TODO: create store method
+TODO: create update method
+TODO: create destroy method
+TODO: create routes line
