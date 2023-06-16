@@ -1,20 +1,20 @@
 {
-  "name": "exapi-snippets",
+  "name": "express-snippets",
   "version": "0.0.2",
-  "description": "exapi snippets",  
-  "displayName": "Exapi Snippets",
+  "description": "express API snippets",  
+  "displayName": "Express API Snippets",
   "publisher": "andteki",
-  "icon": "images/exapi.png",
+  "icon": "images/express-snip.png",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oktat/vscode-exapi-snippets"
+    "url": "https://github.com/oktat/vscode-express-snippets"
   },
   "categories": [
     "Snippets"
   ],
   "engines": {
-    "vscode": "^1.22.0"
+    "vscode": "^0.10.x"
   },
   "contributes": {
     "snippets": [
@@ -25,6 +25,6 @@
     ]
   },
   "scripts": {
-    "build": "vsce package"
+    "build": "vsce package --out dist/"
   }
 }
