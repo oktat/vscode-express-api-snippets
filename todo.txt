@@ -1,10 +1,7 @@
-TODO: express server sablon
-TODO: router sablon
-TODO: model sablon
-TODO: delete db
-TODO: create controll
+TODO: extend controll functions
 TODO: create index method
 TODO: create store method
 TODO: create update method
 TODO: create destroy method
 TODO: create routes line
+TODO: require snippets

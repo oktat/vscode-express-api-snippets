@@ -1,6 +1,6 @@
 {
   "name": "express-snippets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "express API snippets",  
   "displayName": "Express API Snippets",
   "publisher": "andteki",
@@ -23,8 +23,5 @@
         "path": "snippets/snippets.json"
       }
     ]
-  },
-  "scripts": {
-    "build": "vsce package --out dist/"
   }
 }

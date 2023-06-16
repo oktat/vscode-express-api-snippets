@@ -1,5 +1,63 @@
 {
-    "databaseSablon": {
+    "server Sablon": {
+        "prefix": "ser",
+        "body": [
+            "const express = require('express')",
+            "const morgan = require('morgan')",
+            "const app = express()",
+            "const fs = require('fs')",
+            "const router = require('./routes/api')",
+            "const config = require('../config/default.json')",
+            "",
+            "const PORT = config.app.port || 8000",
+            "",
+            "app.use(morgin('dev'))",
+            "app.use(express.json())",
+            "app.use('/api', router)",
+            "",
+            "app.listen(PORT, () => {",
+            "    console.log(`Listening on port: ${PORT}`)",
+            "})",
+            ""
+        ],
+        "description": "Express server sablon"
+    },
+    "Routing Sablon": {
+        "prefix": "rou",
+        "body": [
+            "const Router = require('express')",
+            "const router = Router()",
+            "",
+            "const AuthController = require('../controllers/authcontroller')",
+            "const UserController = require('../controllers/usercontroller')",
+            "const { verifyToken } = require('../middleware/authjwt')",
+            "",
+            "router.post('/register', AuthController.register)",
+            "router.post('/login', AuthController.login)",
+            "router.get('/users', [verifyToken], UserController.index)",
+            "",
+            "module.exports = router",
+            ""
+        ],
+        "description": "Default ruting sablon"
+    },
+    "Controller Sablon": {
+        "prefix": "con",
+        "body": [
+            "",
+            "class EmployeeController {",
+            "    index(req, res) {}",
+            "    store(req, res) {}",
+            "    update(req, res) {}",
+            "    destroy(req, res) {}",
+            "}",
+            "",
+            "module.exports = EmployeeController",
+            ""
+        ],
+        "description": "Controller Sablon with CRUD actions"
+    },
+    "Database Sablon": {
         "prefix": "db",
         "body": [
             "const Sequalize = require('sequelize')",
