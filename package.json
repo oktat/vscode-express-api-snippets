@@ -1,14 +1,14 @@
 {
-  "name": "express-snippets",
-  "version": "0.0.3",
-  "description": "express API snippets",  
-  "displayName": "Express API Snippets",
-  "publisher": "andteki",
-  "icon": "images/express-snip.png",
+  "name": "vscode-express-api-snippets",
+  "displayName": "Snippets for Express API development",
+  "description": "Express API snippets",  
+  "version": "0.0.4",
+  "publisher": "andrewsallai",
+  "icon": "images/express-api-snip.png",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oktat/vscode-express-snippets"
+    "url": "https://github.com/oktat/vscode-express-api-snippets"
   },
   "categories": [
     "Snippets"
@@ -23,5 +23,8 @@
         "path": "snippets/snippets.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "vsce package --out dist/"
   }
 }

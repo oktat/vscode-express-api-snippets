@@ -111,5 +111,14 @@
             ""
         ],
         "description": "Model beszúrás"        
+    },
+    "insert index": {
+        "prefix": "ind",
+        "body": [
+            "index() {",
+            "    $1",
+            "}"
+        ],
+        "description": "Insert index() function into Controller"
     }
 }
