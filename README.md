@@ -6,7 +6,7 @@ This is a express snippets for API development.
 
 Download the latest vscode-exapi-snippets from:
 
-* [https://github.com/oktat/vscode-express-api-snippets](https://github.com/oktat/vscode-express-api-snippets)
+* [https://github.com/oktat/vscode-express-api-snippets/releases](https://github.com/oktat/vscode-express-api-snippets/releases)
 
 ```cmd
 code --install-extension vscode-express-api-snippets-x.y.z.vsix
